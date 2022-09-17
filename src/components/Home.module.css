@@ -1,0 +1,28 @@
+.container_light {
+    background-image: url('../img//porfolio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.container_dark {
+    background-image: url('../img//porfolio-dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.name_light {
+    color: white;
+}
+.name_dark {
+    color: black;
+}
+
+.tittle_light {
+    color: white;
+}
+.tittle_dark {
+    color: black;
+}

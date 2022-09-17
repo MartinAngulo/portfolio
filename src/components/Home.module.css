@@ -1,28 +1,52 @@
-.container_light {
+.container_dark {
+    display: flex;
+    align-items: center;
     background-image: url('../img//porfolio.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
+    top:0;
+    padding-left: 5vw;
 }
-.container_dark {
+.container_light {
+    display: flex;
+    align-items: center;
     background-image: url('../img//porfolio-dark.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
+    top:0;
+    padding-left: 5vw;
 }
 
 .name_light {
-    color: white;
+    padding: 0;
+    margin: 0;
+    color: #5D639E;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 3.5rem;
 }
 .name_dark {
-    color: black;
+    padding: 0;
+    margin: 0;
+    color: #5D639E;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 3.5rem;
 }
 
 .tittle_light {
-    color: white;
+    padding: 0;
+    margin: 0;
+    color: #F59B17;
+    font-family: 'Roboto Condensed';
 }
 .tittle_dark {
-    color: black;
+    padding: 0;
+    margin: 0;
+    color: #F59B17;
+    font-family: 'Roboto Condensed';
 }

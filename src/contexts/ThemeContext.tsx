@@ -1,4 +1,4 @@
 import React from "react";
 
-const ThemeContext = React.createContext<Array<string>>(['light','spanish']);
-export default ThemeContext;
+const SettingsContext = React.createContext<Array<string>>(['light','spanish']);
+export default SettingsContext;

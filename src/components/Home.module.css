@@ -8,6 +8,7 @@
     width: 95vw;
     top:0;
     padding-left: 5vw;
+    background-color: black;
 }
 .container_light {
     display: flex;

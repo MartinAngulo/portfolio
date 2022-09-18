@@ -11,10 +11,10 @@ function App() {
   const [theme, setTheme] = useState<string>('light');
   const [language, setLanguage] = useState<string>('spanish');
   const switchTheme = () => {
-    setTheme(theme => theme == 'light' ? 'dark' : 'light');
+    setTheme(theme => theme === 'light' ? 'dark' : 'light');
   }
   const switchLanguage = () => {
-    setLanguage(language => language== 'spanish' ? 'english' : 'spanish');
+    setLanguage(language => language=== 'spanish' ? 'english' : 'spanish');
   }
 
   return (

@@ -21,9 +21,9 @@ function App() {
     <ThemeContext.Provider value={[theme, language]}>
       <Navbar switchTheme={switchTheme} switchLanguage={switchLanguage}/>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/portfolio' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path='*' element={<Navigate to='/'/>}/>
+        <Route path='*' element={<Navigate to='/portfolio'/>}/>
       </Routes>
     </ThemeContext.Provider>
   );

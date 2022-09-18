@@ -23,7 +23,7 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
     props.switchLanguage();
   }
   const home = ()=>{
-    navigate('/');
+    navigate('/portfolio');
     window.scrollTo(0,0);
   }
 

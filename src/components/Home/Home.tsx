@@ -1,14 +1,10 @@
 import React, { Fragment, useContext } from 'react';
-import SettingsContext from '../contexts/ThemeContext';
+import SettingsContext from '../../contexts/SettingContext';
 import styles from './Home.module.css';
-import texts from '../languages/texts';
-import About from './About';
-import Technologies from './Technologies';
-import Contact from './Contact';
-
-// interface HomeProps{
-//   switchTheme:{():void}
-// }
+import texts from '../../languages/texts';
+import About from '../About/About';
+import Technologies from '../Technologies';
+import Contact from '../Contact';
 
 export default function Home() {
   const settings = useContext(SettingsContext);
@@ -23,9 +19,10 @@ export default function Home() {
           <h3 className={isLight ? styles.tittle_light : styles.tittle_dark}>{(texts as any)[language].tittle}</h3>
         </div>
       </div>
-      <About />
-      <Technologies />
-      <Contact />
+      <div id="About"><About /></div>
+      <div id="Tech"><Technologies /></div>
+      <div id="Contact"><Contact /></div>
     </Fragment>
   )
 }
+

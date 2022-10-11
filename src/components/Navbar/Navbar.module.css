@@ -3,10 +3,11 @@
     justify-content: flex-end;
     gap: 3vw;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    background-color: transparent;
+    width: 100%;
+    background-color: #11182852;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -14,11 +15,13 @@
     display: flex;
     gap: 3vw;
     color: white;
+    align-items: center;
 }
 .options_light {
     display: flex;
     gap: 3vw;
     color: black;
+    align-items: center;
 }
 
 .buttonGroup_light {

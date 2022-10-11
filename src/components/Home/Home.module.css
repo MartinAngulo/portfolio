@@ -1,7 +1,7 @@
 .container_dark {
     display: flex;
     align-items: center;
-    background-image: url('../img//porfolio.png');
+    background-image: url('../../img/porfolio.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -13,7 +13,7 @@
 .container_light {
     display: flex;
     align-items: center;
-    background-image: url('../img//porfolio-dark.png');
+    background-image: url('../../img/porfolio-dark.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

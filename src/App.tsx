@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
+import Home from './components/Home/Home';
+import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects';
-import ThemeContext from './contexts/ThemeContext';
+import ThemeContext from './contexts/SettingContext';
 
 
 function App() {

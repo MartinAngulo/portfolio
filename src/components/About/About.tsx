@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import styles from './About.module.css';
-import SettingsContext from '../contexts/ThemeContext';
-import texts from '../languages/texts';
-import img1 from '../img/img1.png';
+import SettingsContext from '../../contexts/SettingContext';
+import texts from '../../languages/texts';
+import img1 from '../../img/img1.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function About() {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import SettingsContext from '../contexts/ThemeContext';
+import SettingsContext from '../contexts/SettingContext';
 import texts from '../languages/texts';
 import CardTech from './CardTech';
 

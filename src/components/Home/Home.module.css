@@ -1,53 +1,66 @@
 .container_dark {
     display: flex;
-    align-items: center;
-    background-image: url('../../img/porfolio.png');
-    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('../../img/home_dark.png');
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 95vw;
-    top:0;
-    padding-left: 5vw;
-    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #120907;
 }
+
 .container_light {
     display: flex;
-    align-items: center;
-    background-image: url('../../img/porfolio-dark.png');
-    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../../img/home_light.png");
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 95vw;
-    top:0;
-    padding-left: 5vw;
+    width: 100%;
+    background-color: #E5E5E5;
 }
+
 
 .name_light {
     padding: 0;
     margin: 0;
-    color: #5D639E;
+    color: #212543;
     font-family: 'Roboto Condensed';
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 7rem;
+    padding-left: 3vw;
 }
+
 .name_dark {
     padding: 0;
     margin: 0;
-    color: #5D639E;
+    color: #b8cbed;
     font-family: 'Roboto Condensed';
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 7rem;
+    padding-left: 3vw;
 }
 
 .tittle_light {
     padding: 0;
     margin: 0;
-    color: #F59B17;
+    color: #526588;
+    font-size: 2.5rem;
     font-family: 'Roboto Condensed';
+    padding-bottom: 10vh;
+    padding-left: 3vw;
 }
+
 .tittle_dark {
     padding: 0;
     margin: 0;
-    color: #F59B17;
+    color: #828fcb;
+    font-size: 2.5rem;
     font-family: 'Roboto Condensed';
+    padding-bottom: 10vh;
+    padding-left: 3vw;
 }

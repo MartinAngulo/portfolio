@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.btn_left {
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.btn_right {
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+    cursor: pointer;
+}

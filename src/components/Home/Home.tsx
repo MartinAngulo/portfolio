@@ -14,10 +14,8 @@ export default function Home() {
   return (
     <Fragment>
       <div className={isLight ? styles.container_light : styles.container_dark}>
-        <div>
           <h1 className={isLight ? styles.name_light : styles.name_dark}>{(texts as any)[language].name}<br />{(texts as any)[language].lastname}</h1>
           <h3 className={isLight ? styles.tittle_light : styles.tittle_dark}>{(texts as any)[language].tittle}</h3>
-        </div>
       </div>
       <div id="About"><About /></div>
       <div id="Tech"><Technologies /></div>

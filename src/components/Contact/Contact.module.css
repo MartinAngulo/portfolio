@@ -1,0 +1,71 @@
+.container_light {
+    background-image: url("../../img/contact_light.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   background-color: #E5E5E5;
+}
+
+.container_dark {
+    background-image: url("../../img/contact_dark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   background-color: #120907;
+}
+
+.tittle_light {
+    margin: 0 5vw 0 0;
+    font-size: 4rem;
+    align-self: flex-end;
+    color: #212543;
+}
+.tittle_dark {
+    margin: 0 5vw 0 0;
+    font-size: 4rem;
+    align-self: flex-end;
+    color: #b8cbed;
+}
+
+.contact_light {
+    display: flex;
+    width: 60vw;
+    color: #526588;
+}
+.contact_dark {
+    display: flex;
+    width: 60vw;
+    color: #526588;
+    z-index: 1;
+}
+.contact_dark::before {
+    content: "";
+    position: absolute;
+    width: 65vw;
+    height: 30vh;
+    background-color: #b8cbed;
+    z-index: -1;
+}
+
+.social {
+    width: 30vw;
+    font-weight: 500;
+    margin-left: 5vw;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}

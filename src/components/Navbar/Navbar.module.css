@@ -10,6 +10,7 @@
     background-color: #060606;
     font-family: 'Roboto Condensed', sans-serif;
     height: 5vh;
+    z-index: 100;
 }
 
 .navbar_dark {
@@ -24,6 +25,7 @@
     background-color: #384873;
     font-family: 'Roboto Condensed', sans-serif;
     height: 5vh;
+    z-index: 100;
 }
 
 .options_dark {

@@ -3,8 +3,8 @@ import SettingsContext from '../../contexts/SettingContext';
 import styles from './Home.module.css';
 import texts from '../../languages/texts';
 import About from '../About/About';
-import Technologies from '../Technologies';
-import Contact from '../Contact';
+import Technologies from '../Tech/Technologies';
+import Contact from '../Contact/Contact';
 
 export default function Home() {
   const settings = useContext(SettingsContext);

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import SettingsContext from '../contexts/SettingContext';
-import texts from '../languages/texts';
+import SettingsContext from '../../contexts/SettingContext';
+import texts from '../../languages/texts';
 import CardTech from './CardTech';
 
 export default function Technologies() {

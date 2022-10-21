@@ -1,4 +1,4 @@
-.navbar {
+.navbar_light {
     display: flex;
     justify-content: flex-end;
     gap: 3vw;
@@ -7,107 +7,89 @@
     top: 0;
     right: 0;
     width: 100%;
-    background-color: #11182852;
+    background-color: #060606;
     font-family: 'Roboto Condensed', sans-serif;
+    height: 5vh;
+}
+
+.navbar_dark {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #384873;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 5vh;
+}
+
+.navbar_dark::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: white;
+    opacity: 30%;
+    z-index: -1;
 }
 
 .options_dark {
     display: flex;
     gap: 3vw;
     color: white;
-    align-items: center;
+    align-items: flex-end;
 }
+
 .options_light {
     display: flex;
     gap: 3vw;
-    color: black;
-    align-items: center;
+    color: white;
+    align-items: flex-end;
 }
 
 .buttonGroup_light {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px;
     gap: 5px;
+    margin-right: 20px;
 }
+
 .buttonGroup_dark {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px;
     gap: 5px;
+    margin-right: 20px;
 }
 
 .select {
     width: 60px;
     font-size: 0.5rem;
-}
-
-.switch_light {
-    background-color: orange;
-    border-radius: 20px;
-    border: none;
-    height: 20px;
-    width: 55px;
-    position: relative;
     cursor: pointer;
-    display: flex;
-    outline: none;
-    align-items: center;
-}
-.switch_light::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background: white;
-    top: 0;
-    right: 5px;
-    left: unset;
-    border-radius: 30px;
-    transition: 1s ease all;
-    box-shadow: 0px 0px 2px 2px white;
-}
-.switch_dark {
-    border-radius: 20px;
-    border: none;
-    height: 20px;
-    width: 55px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
-    align-items: center;
-    background: black;
-    color: black;
-
-}
-.switch_dark::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background: white;
-    top: 0;
-    right: unset;
-    left: 5px;
-    border-radius: 30px;
-    transition: 1s ease all;
-    box-shadow: 0px 0px 2px 2px white;
 }
 
 .switchSpan {
     width: 30px;
     height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
 }
 
 .btns {
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }

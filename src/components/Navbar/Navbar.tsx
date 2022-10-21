@@ -32,7 +32,7 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
   }
 
   return (
-    <div className={styles.navbar}>
+    <div className={isLight ? styles.navbar_light : styles.navbar_dark}>
       <div className={isLight ? styles.options_light : styles.options_dark}>
         <p className={styles.btns} onClick={goHome}>{(texts as any)[language].navbar[0]}</p>
         <Scroll
@@ -52,10 +52,10 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
         >{(texts as any)[language].navbar[3]}</Scroll>
       </div>
       <div className={isLight ? styles.buttonGroup_light : styles.buttonGroup_dark}>
-        <button className={isLight ? styles.switch_light : styles.switch_dark} onClick={onClick}>
-          <span className={styles.switchSpan}><FontAwesomeIcon icon={faSun} /></span>
-          <span className={styles.switchSpan}><FontAwesomeIcon icon={faMoon} /></span>
-        </button>
+          {isLight?
+          <button onClick={onClick} className={styles.switchSpan}><FontAwesomeIcon icon={faSun} /></button>
+          :
+          <button onClick={onClick} className={styles.switchSpan}><FontAwesomeIcon icon={faMoon} /></button>}
         <select className={styles.select} value={language} onChange={onChange}>
           <option value='spanish'>Español</option>
           <option value='english'>English</option>

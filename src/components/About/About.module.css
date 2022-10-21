@@ -75,11 +75,11 @@
 }
 
 .img_light {
-    width: 20vw;
+    width: 21vw;
     height: 40vh;
 }
 .img_dark {
-    width: 20vw;
+    width: 21vw;
     height: 40vh;
 }
 
@@ -88,6 +88,5 @@
     width: 80vw;
     height: 20vh;
     color: white;
-    background-color: brown;
     margin-bottom: 5vh;
 }

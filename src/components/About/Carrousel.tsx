@@ -14,7 +14,6 @@ type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 function LeftArrow() {
   const { isFirstItemVisible, scrollPrev } = useContext(VisibilityContext);
-  console.log(useContext(VisibilityContext).visibleItems);
   return (
     <button className={isFirstItemVisible ? styles.btn_left_disable : styles.btn_left} disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
     </button>
@@ -30,7 +29,7 @@ function RightArrow() {
 }
 
 
-export default function Carrousel() {
+export default function Carrousel(props: { open: (id: number) => void }) {
 
   const [items, setItems] = useState(getItems);
 
@@ -44,9 +43,9 @@ export default function Carrousel() {
       }
     });
 
-  const handleItemClick = (itemId: string) => () => {
-    if (dragging) {
-      return false;
+  const handleItemClick = (id: number) => {
+    if (!dragging) {
+      props.open(id);
     }
   }
 
@@ -61,13 +60,15 @@ export default function Carrousel() {
           onMouseMove={handleDrag}
         >
           {items.map(({ id }) => (
-            <img
-              className={styles.img}
-              draggable={false}
-              onClick={() => handleItemClick("item-" + id)}
-              src={require(`../../img/carrousel/img-${id}.jpg`)}
-              id={"item-" + id}
-            />
+            <figure className={styles.figure}>
+              <img
+                className={styles.img}
+                draggable={false}
+                onClick={() => handleItemClick(id)}
+                src={require(`../../img/carrousel/img-${id}.jpg`)}
+                id={"item-" + id}
+              />
+            </figure>
           ))}
         </ScrollMenu>
       </div>

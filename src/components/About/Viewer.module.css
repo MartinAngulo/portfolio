@@ -1,0 +1,65 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+
+.img {
+height: 60vh;
+}
+.img:hover {
+    transform: scale(1.5);
+}
+
+.close {
+    position: absolute;
+    top: 10vh;
+    right: 8vw;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #747b98;
+    border: 2px solid #060606;
+}
+.close:hover {
+    color:#747b98;
+    background: #060606;
+    border: 2px solid #747b98;
+}
+
+.left_btn {
+    height: 100%;
+    width: 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #747b98;
+    border: none;
+    opacity: 0.3;
+}
+.left_btn:hover {
+    opacity: 1;
+}
+
+.right_btn {
+    height: 100%;
+    width: 5vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: #747b98;
+    border: none;
+    opacity: 0.3;
+}
+.right_btn:hover {
+    opacity: 1;
+}

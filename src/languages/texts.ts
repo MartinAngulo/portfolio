@@ -40,6 +40,7 @@ const data = {
             "Corel": ["Corel Suite", corel],
         },
         contact: ["Si quieres conocer mas sobre mi", "Puedes escribirme al:", "También puedes revisar mis redes:"],
+        cv: ["Descargar CV", "https://drive.google.com/u/0/uc?id=1B9cRtY9-aAfNUUCZqs3cl3Wn5RzQK2Fg&export=download"],
     },
     english: {
         name: "I'M MARTIN",
@@ -65,6 +66,7 @@ const data = {
             "Corel": ["Corel Suite", corel],
         },
         contact: ["If you want to know more about me", "You can write to me at:", "You can also check my networks:"],
+        cv:["Download CV", "https://drive.google.com/u/0/uc?id=1B9cRtY9-aAfNUUCZqs3cl3Wn5RzQK2Fg&export=download"],
     }
 };
 

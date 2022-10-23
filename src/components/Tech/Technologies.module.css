@@ -1,5 +1,5 @@
-.container_light {
-    background-image: url("../../img/tech_light.png");
+.container_spanish_light {
+    background-image: url("../../img/tech_spanish_light.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
@@ -9,8 +9,29 @@
     background-color: #E5E5E5;
 }
 
-.container_dark {
-    background-image: url("../../img/tech_dark.png");
+.container_spanish_dark {
+    background-image: url("../../img/tech_spanish_dark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #120907;
+}
+.container_english_light {
+    background-image: url("../../img/tech_english_light.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.container_english_dark {
+    background-image: url("../../img/tech_english_dark.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;

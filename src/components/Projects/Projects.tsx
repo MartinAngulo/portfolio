@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import info from './project_info';
 
 export default function Projects() {
   return (

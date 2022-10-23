@@ -1,9 +1,9 @@
-.container_light {
+.container_spanish_light {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-image: url("../../img/about_light.png");
+    background-image: url("../../img/about_spanish_light.png");
     background-color: #E5E5E5;
     padding: 0;
     margin: 0;
@@ -12,12 +12,40 @@
     align-items: flex-end;
     justify-content: space-between;
 }
-.container_dark {
+.container_spanish_dark {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-image: url("../../img/about_dark.png");
+    background-image: url("../../img/about_spanish_dark.png");
+    background-color: #120907;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.container_english_light {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../img/about_english_light.png");
+    background-color: #E5E5E5;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.container_english_dark {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../img/about_english_dark.png");
     background-color: #120907;
     padding: 0;
     margin: 0;

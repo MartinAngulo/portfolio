@@ -6,6 +6,11 @@ import About from '../About/About';
 import Technologies from '../Tech/Technologies';
 import Contact from '../Contact/Contact';
 
+const background = {
+  spanish: [styles.container_spanish_light, styles.container_spanish_dark],
+  english : [styles.container_english_light, styles.container_english_dark]
+}
+
 export default function Home() {
   const settings = useContext(SettingsContext);
   const isLight = settings[0] === 'light';
@@ -13,7 +18,7 @@ export default function Home() {
 
   return (
     <Fragment>
-      <div className={isLight ? styles.container_light : styles.container_dark}>
+      <div className={isLight ? (background as any)[language][0] : (background as any)[language][1]}>
           <h1 className={isLight ? styles.name_light : styles.name_dark}>{(texts as any)[language].name}<br />{(texts as any)[language].lastname}</h1>
           <h3 className={isLight ? styles.tittle_light : styles.tittle_dark}>{(texts as any)[language].tittle}</h3>
       </div>

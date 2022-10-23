@@ -6,6 +6,11 @@ import foto from '../../img/foto.png';
 import Carrousel from './Carrousel';
 import Viewer from './Viewer';
 
+const background = {
+  spanish: [styles.container_spanish_light, styles.container_spanish_dark],
+  english : [styles.container_english_light, styles.container_english_dark]
+}
+
 export default function About() {
   const settings = useContext(SettingsContext);
   const language = settings[1];
@@ -22,7 +27,7 @@ export default function About() {
   }
 
   return (
-    <div className={isLight ? styles.container_light : styles.container_dark}>
+    <div className={isLight ? (background as any)[language][0] : (background as any)[language][1]}>
       <div className={styles.info}>
         <div className={styles.top}>
           <p className={isLight ? styles.text_light : styles.text_dark}>{(texts as any)[language].about[5]}</p>

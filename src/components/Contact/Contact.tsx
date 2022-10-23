@@ -7,13 +7,18 @@ import link from '../../img/link.png';
 import git from '../../img/git.png';
 import styles from './Contact.module.css';
 
+const background = {
+  spanish: [styles.container_spanish_light, styles.container_spanish_dark],
+  english : [styles.container_english_light, styles.container_english_dark]
+}
+
 export default function Contact() {
   const settings = useContext(SettingsContext);
   const isLight = settings[0] === 'light';
   const language = settings[1];
 
   return (
-    <div className={isLight ? styles.container_light : styles.container_dark}>
+    <div className={isLight ? (background as any)[language][0] : (background as any)[language][1]}>
       <h1 className={isLight ? styles.tittle_light : styles.tittle_dark}>
         {(texts as any)[language].contact[0]}</h1>
       <div className={isLight ? styles.contact_light : styles.contact_dark}>

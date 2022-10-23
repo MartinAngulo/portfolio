@@ -22,6 +22,11 @@ const techs = {
   "Corel":styles.wheel_corel,
 }
 
+const background = {
+  spanish: [styles.container_spanish_light, styles.container_spanish_dark],
+  english : [styles.container_english_light, styles.container_english_dark]
+}
+
 export default function Technologies() {
   const settings = useContext(SettingsContext);
   const language = settings[1];
@@ -39,7 +44,7 @@ export default function Technologies() {
   }
 
   return (
-    <div className={isLight ? styles.container_light : styles.container_dark}>
+    <div className={isLight ? (background as any)[language][0] : (background as any)[language][1]}>
       <div className={isLight ? styles.tech_wheel_light : styles.tech_wheel_dark}>
         <img className={(techs as any)[active]} src={(texts as any)[language].wheel} alt="wheel_tech" />
       </div>

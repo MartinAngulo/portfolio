@@ -20,10 +20,77 @@
     background-color: #120907;
 }
 
-.tech_wheel {
-    width: 30vw;
-    height: 100vh;
-    background-color: red;
+
+.tech_wheel_light {
+    width: 32vw;
+    height: 95vh;
+    margin-top: 5vh;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tech_wheel_dark {
+    width: 32vw;
+    height: 95vh;
+    margin-top: 5vh;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.wheel_html {
+    transition: all 1s ease-in-out;
+}
+.wheel_react {
+    transition: all 1s ease-in-out;
+    transform: rotate(-25.7deg);
+}
+.wheel_js {
+    transition: all 1s ease-in-out;
+    transform: rotate(-51.4deg);
+}
+.wheel_mongo {
+    transition: all 1s ease-in-out;
+    transform: rotate(-77.1deg);
+}
+.wheel_ts {
+    transition: all 1s ease-in-out;
+    transform: rotate(-102.8deg);
+}
+.wheel_css {
+    transition: all 1s ease-in-out;
+    transform: rotate(-128.5deg);
+}
+.wheel_node {
+    transition: all 1s ease-in-out;
+    transform: rotate(-154.2deg);
+}
+.wheel_sequelize {
+    transition: all 1s ease-in-out;
+    transform: rotate(-180deg);
+}
+.wheel_mongoose {
+    transition: all 1s ease-in-out;
+    transform: rotate(-205.7deg);
+}
+.wheel_corel {
+    transition: all 1s ease-in-out;
+    transform: rotate(-231.4deg);
+}
+.wheel_tailwind {
+    transition: all 1s ease-in-out;
+    transform: rotate(-257.1deg);
+}
+.wheel_redux {
+    transition: all 1s ease-in-out;
+    transform: rotate(-282.8deg);
+}.wheel_postgres {
+    transition: all 1s ease-in-out;
+    transform: rotate(-308.5deg);
+}.wheel_git {
+    transition: all 1s ease-in-out;
+    transform: rotate(-334.2deg);
 }
 
 .tech {
@@ -35,11 +102,12 @@
 }
 
 .tittle_light {
-    font-size:4rem;
+    font-size: 4rem;
     color: #212543;
 }
+
 .tittle_dark {
-    font-size:4rem;
+    font-size: 4rem;
     color: #b8cbed;
 }
 
@@ -61,6 +129,7 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 .btn_light:hover {
     background-color: #120907;
     color: #E5E5E5;
@@ -76,6 +145,7 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 .btn_dark:hover {
     background-color: #E5E5E5;
     color: #120907;

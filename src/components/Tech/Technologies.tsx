@@ -5,12 +5,29 @@ import texts from '../../languages/texts';
 import CardTech from './CardTech';
 import styles from './Technologies.module.css';
 
+const techs = {
+  "HTML5": styles.wheel_html,
+  "React.js": styles.wheel_react,
+  "CSS": styles.wheel_css,
+  "Tailwind": styles.wheel_tailwind,
+  'Node.js': styles.wheel_node,
+  'Redux.js': styles.wheel_redux,
+  'JavaScript': styles.wheel_js,
+  'Sequelize': styles.wheel_sequelize,
+  'postgreSQL': styles.wheel_postgres,
+  'MongoDB': styles.wheel_mongo,
+  'Mongoose': styles.wheel_mongoose,
+  'Git': styles.wheel_git,
+  'TypeScript': styles.wheel_ts,
+  "Corel":styles.wheel_corel,
+}
+
 export default function Technologies() {
   const settings = useContext(SettingsContext);
   const language = settings[1];
   const isLight = settings[0] === 'light';
 
-  const [active, setActive] = useState<string>("HTML 5");
+  const [active, setActive] = useState<string>("HTML5");
 
   const navigate = useNavigate();
   const onClick = () => {
@@ -23,8 +40,9 @@ export default function Technologies() {
 
   return (
     <div className={isLight ? styles.container_light : styles.container_dark}>
-      <span className={styles.tech_wheel}>
-      </span>
+      <div className={isLight ? styles.tech_wheel_light : styles.tech_wheel_dark}>
+        <img className={(techs as any)[active]} src={(texts as any)[language].wheel} alt="wheel_tech" />
+      </div>
       <div className={styles.tech}>
         <h1 className={isLight ? styles.tittle_light : styles.tittle_dark}>{(texts as any)[language].tech[0]}</h1>
         <div className={styles.grid}>

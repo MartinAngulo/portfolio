@@ -12,6 +12,8 @@ import redux from '../img/tech/redux.png';
 import sequelize from '../img/tech/sequelize.png';
 import tailwind from '../img/tech/tailwind.png';
 import ts from '../img/tech/ts.png';
+import wheel_spanish from '../img/wheel_tech_spanish.png';
+import wheel_english from '../img/wheel_tech_english.png';
 
 
 const data = {
@@ -24,7 +26,7 @@ const data = {
         projects: 'Proyectos',
         tech: ["Principales Tecnologías", "Mis proyectos"],
         technologies: {
-            "HTML 5": ["HTML 5", html],
+            "HTML5": ["HTML5", html],
             "CSS": ["CSS", css],
             "Tailwind": ["Tailwind", tailwind],
             "React.js": ["React.js", react],
@@ -41,6 +43,7 @@ const data = {
         },
         contact: ["Si quieres conocer mas sobre mi", "Puedes escribirme al:", "También puedes revisar mis redes:"],
         cv: ["Descargar CV", "https://drive.google.com/u/0/uc?id=1B9cRtY9-aAfNUUCZqs3cl3Wn5RzQK2Fg&export=download"],
+        wheel: wheel_spanish,
     },
     english: {
         name: "I'M MARTIN",
@@ -50,7 +53,7 @@ const data = {
         about: ['Electrical and Mechanical Eng.', "Designer", "Developer", "I'm Martin, I'have 28 years old and I'm very passionate about challenges", "I am a lover of graphic design, with +10 years of experience in managing Corel Suite", "Before the pandemic, I worked as Quality Control and Plant Manager in the metalworking industry", "Where I developed multiple skills to work in a team and lead them.", "I am currently a full-stack web developer, graduated from SoyHenry's Bootcamp"],
         tech: ["Main Technologies", "My projects"],
         technologies: {
-            "HTML 5": ["HTML 5", html],
+            "HTML5": ["HTML5", html],
             "CSS": ["CSS", css],
             "Tailwind": ["Tailwind", tailwind],
             "React.js": ["React.js", react],
@@ -67,6 +70,7 @@ const data = {
         },
         contact: ["If you want to know more about me", "You can write to me at:", "You can also check my networks:"],
         cv:["Download CV", "https://drive.google.com/u/0/uc?id=1B9cRtY9-aAfNUUCZqs3cl3Wn5RzQK2Fg&export=download"],
+        wheel: wheel_english,
     }
 };
 

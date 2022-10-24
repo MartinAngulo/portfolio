@@ -23,7 +23,7 @@ const data = {
         tittle: 'Desarrollador React.js & Node.js',
         navbar: ['Inicio', 'Sobre mi', 'Tecnologias', 'Contacto'],
         about: ['Ing. Mecánico Eléctrico', "Diseñador", "Desarrollador", "Soy Martín, tengo 28 años y me apasionan mucho los retos", "Amante del diseño grafico, con +10 años de experiencia en el manejo de Corel Suite", "Antes de la pandemia me desarrollé como Control de Calidad y Jefe de Planta en la industria metalmecánica", "Donde desarrollé multiples habilidades para trabajar en equipo y liderar los mismos", "Actualmente soy Desarrollador web Full Stack graduado del bootcamp SoyHenry"],
-        projects: 'Proyectos',
+        projects: ['Proyectos', 'Atras'],
         tech: ["Principales Tecnologías", "Mis proyectos"],
         technologies: {
             "HTML5": ["HTML5", html],
@@ -51,6 +51,7 @@ const data = {
         tittle: 'React.js & Node.js Developer',
         navbar: ['Home', 'About', 'Technologies', 'Contact'],
         about: ['Electrical and Mechanical Eng.', "Designer", "Developer", "I'm Martin, I'have 28 years old and I'm very passionate about challenges", "I am a lover of graphic design, with +10 years of experience in managing Corel Suite", "Before the pandemic, I worked as Quality Control and Plant Manager in the metalworking industry", "Where I developed multiple skills to work in a team and lead them.", "I am currently a full-stack web developer, graduated from SoyHenry's Bootcamp"],
+        projects: ['Projects', 'Back'],
         tech: ["Main Technologies", "My projects"],
         technologies: {
             "HTML5": ["HTML5", html],

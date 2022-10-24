@@ -20,18 +20,15 @@ height: 60vh;
 
 .close {
     position: absolute;
-    top: 10vh;
-    right: 8vw;
+    top: 30px;
+    right: 50px;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: #747b98;
-    border: 2px solid #060606;
-}
-.close:hover {
-    color:#747b98;
-    background: #060606;
-    border: 2px solid #747b98;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .left_btn {

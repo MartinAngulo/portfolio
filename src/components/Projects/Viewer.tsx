@@ -37,6 +37,8 @@ export default function Viewer(props: { data: project, close: () => void }) {
                     onClick={() => handleMove('left')}
                 >{"<"}</button>
                 <img
+                    alt='capture photo'
+                    loading='lazy'
                     className={styles.img}
                     src={props.data.captures[selected]}
                 ></img>
@@ -58,18 +60,24 @@ export default function Viewer(props: { data: project, close: () => void }) {
             <div className={styles.info}>
                 <h1 style={{ margin: "0 0 5px 0", padding: "0" }}>{props.data.name}</h1>
                 <a>{props.data.description}</a>
-                <div style={{ marginTop: "10px", display: "flex", gap:"10px", alignItems:"center" }}>
-                    <img style={{ height: "20px" }} src={require('../../img/web.png')}></img>
+                <div style={{ marginTop: "10px", display: "flex", gap: "10px", alignItems: "center" }}>
+                    <img
+                    alt='web logo'
+                    loading='lazy'
+                    style={{ height: "20px" }} src={require('../../img/web.png')}></img>
                     <a
-                    style={{textDecoration:"none", color:"black", fontWeight:"bold"}}
-                    href={props.data.link} rel="noreferrer noopener" target="_blank"
+                        style={{ textDecoration: "none", color: "black", fontWeight: "bold" }}
+                        href={props.data.link} rel="noreferrer noopener" target="_blank"
                     >{props.data.link}</a>
                 </div>
-                <div style={{ marginTop: "10px", display: "flex", gap:"10px", alignItems:"center" }}>
-                    <img style={{ height: "20px" }} src={require('../../img/git.png')}></img>
+                <div style={{ marginTop: "10px", display: "flex", gap: "10px", alignItems: "center" }}>
+                    <img
+                    alt='Github logo'
+                    loading='lazy'
+                    style={{ height: "20px" }} src={require('../../img/git.png')}></img>
                     <a
-                    style={{textDecoration:"none", color:"black", fontWeight:"bold"}}
-                    href={props.data.repo} rel="noreferrer noopener" target="_blank"
+                        style={{ textDecoration: "none", color: "black", fontWeight: "bold" }}
+                        href={props.data.repo} rel="noreferrer noopener" target="_blank"
                     >{props.data.repo}</a>
                 </div>
             </div>

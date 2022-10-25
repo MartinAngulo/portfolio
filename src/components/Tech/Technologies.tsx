@@ -46,7 +46,9 @@ export default function Technologies() {
   return (
     <div className={isLight ? (background as any)[language][0] : (background as any)[language][1]}>
       <div className={isLight ? styles.tech_wheel_light : styles.tech_wheel_dark}>
-        <img className={(techs as any)[active]} src={(texts as any)[language].wheel} alt="wheel_tech" />
+        <img
+        loading='lazy'
+        className={(techs as any)[active]} src={(texts as any)[language].wheel} alt="wheel_tech" />
       </div>
       <div className={styles.tech}>
         <h1 className={isLight ? styles.tittle_light : styles.tittle_dark}>{(texts as any)[language].tech[0]}</h1>

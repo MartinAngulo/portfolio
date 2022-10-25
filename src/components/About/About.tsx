@@ -42,7 +42,10 @@ export default function About() {
             <h1 className={isLight ? styles.title_light : styles.title_dark}>{(texts as any)[language].about[1]}</h1>
             <p className={isLight ? styles.text_light : styles.text_dark}>{(texts as any)[language].about[4]}</p>
           </div>
-          <img className={isLight ? styles.img_light : styles.img_dark} src={foto}></img>
+          <img 
+          alt='perfil photo'
+          loading='lazy'
+          className={isLight ? styles.img_light : styles.img_dark} src={foto}></img>
           <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
             <h1 className={isLight ? styles.title_light : styles.title_dark}>{(texts as any)[language].about[2]}</h1>
             <p className={isLight ? styles.text_light : styles.text_dark}>{(texts as any)[language].about[7]}</p>

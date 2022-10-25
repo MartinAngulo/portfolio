@@ -19,9 +19,14 @@ export default function Viewer(props: { close: () => void, id: number, open: (id
             <button className={styles.left_btn} onClick={handleLeft}>{"<"}</button>
             {
                 props.id === 0 ?
-                    <img style={{ width: "500px" }} src={require('../../img/loading.gif')}></img>
+                    <img 
+                    alt='loading photo'
+                    loading='lazy'
+                    style={{ width: "500px" }} src={require('../../img/loading.gif')}></img>
                     :
                     <img
+                        loading='lazy'
+                        alt='Viewer'
                         className={styles.img}
                         src={require(`../../img/carrousel/img-${props.id}.jpg`)}
                     ></img>}

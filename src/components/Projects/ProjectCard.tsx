@@ -33,6 +33,8 @@ export default function ProjectCard(props: { name: string, imgs: Array<string>, 
                 onClick={() => handleMove('left')}
             >{"<"}</button>
             <img
+                alt='project photo'
+                loading='lazy'
                 className={styles.img}
                 src={props.imgs[selected]}
                 onClick={handleClick}

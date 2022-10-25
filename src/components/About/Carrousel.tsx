@@ -62,6 +62,8 @@ export default function Carrousel(props: { open: (id: number) => void }) {
           {items.map(({ id }) => (
             <figure className={styles.figure}>
               <img
+                alt='Carrousel photo'
+                loading='lazy'
                 className={styles.img}
                 draggable={false}
                 onClick={() => handleItemClick(id)}

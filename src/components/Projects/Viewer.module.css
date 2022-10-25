@@ -43,7 +43,7 @@
 
 .btn_move_left {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 0;
     border: none;
     border-radius: 50%;
@@ -58,9 +58,10 @@
     cursor: pointer;
     margin-left: 10px;
 }
+
 .btn_move_right {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 0;
     border: none;
     border-radius: 50%;
@@ -96,6 +97,7 @@
     margin: 0;
     padding: 0;
 }
+
 .noselect {
     height: 3px;
     width: 10%;
@@ -103,17 +105,23 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
-    }
+}
 
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    width: 25vw;
+    height: 64vh;
+    padding: 3vh;
+    background-color: white;
+}
+
+@media screen and (max-width: 1370px) {
     .info {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        gap: 10px;
-        width: 25vw;
-        height: 64vh;
-        padding: 3vh;
-        background-color: white;
+        width: 35vw;
     }
 
+}

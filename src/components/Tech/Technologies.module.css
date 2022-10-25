@@ -171,3 +171,31 @@
     background-color: #E5E5E5;
     color: #120907;
 }
+
+@media screen and (max-width: 1370px){
+    .tech_wheel_light {
+        width: 40vw;
+    }
+    .tech_wheel_dark {
+        width: 40vw;
+    }
+    
+    .tech {
+        align-items: flex-start;
+        width: 45vw;
+        margin-left: 3vw;
+    }
+    .tittle_light {
+        font-size: 3.5rem;
+    }
+    .tittle_dark {
+        font-size: 3.5rem;
+    }
+    .btn_dark {
+        width: 150px;
+    }
+    .btn_light {
+        width: 150px;
+    }
+}
+

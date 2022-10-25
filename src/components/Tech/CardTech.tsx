@@ -9,7 +9,7 @@ export default function CardTech(props: { name: string, active:boolean }) {
 
 
   return (
-    <div style={{ display: "flex", gap: "10px", width:"200px" }}>
+    <div style={{ display: "flex", gap: "10px", width:"150px" }}>
       <div style={{width:"60px", height:"60px", borderRadius:"10px", backgroundColor:"white", display:"flex", justifyContent:"center", alignItems:"center"}}>
         <img
         alt='tech logo'

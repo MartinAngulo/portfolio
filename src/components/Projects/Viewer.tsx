@@ -66,7 +66,7 @@ export default function Viewer(props: { data: project, close: () => void }) {
                     loading='lazy'
                     style={{ height: "20px" }} src={require('../../img/web.png')}></img>
                     <a
-                        style={{ textDecoration: "none", color: "black", fontWeight: "bold" }}
+                        style={{ textDecoration: "none", color: "black", fontWeight: "bold", cursor:"pointer" }}
                         href={props.data.link} rel="noreferrer noopener" target="_blank"
                     >{props.data.link}</a>
                 </div>
@@ -76,7 +76,7 @@ export default function Viewer(props: { data: project, close: () => void }) {
                     loading='lazy'
                     style={{ height: "20px" }} src={require('../../img/git.png')}></img>
                     <a
-                        style={{ textDecoration: "none", color: "black", fontWeight: "bold" }}
+                        style={{ textDecoration: "none", color: "black", fontWeight: "bold", cursor:"pointer" }}
                         href={props.data.repo} rel="noreferrer noopener" target="_blank"
                     >{props.data.repo}</a>
                 </div>

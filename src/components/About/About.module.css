@@ -104,11 +104,9 @@
 
 .img_light {
     width: 21vw;
-    height: 40vh;
 }
 .img_dark {
     width: 21vw;
-    height: 40vh;
 }
 
 .carrousel {
@@ -117,4 +115,15 @@
     height: 20vh;
     color: white;
     margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 1370px){
+    .info {
+        height: 50vh;
+    }
+
+    .img_light {
+        width: 15vw;
+        margin-top: 5vh;
+    }
 }

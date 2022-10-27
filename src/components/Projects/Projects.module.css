@@ -87,3 +87,33 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+    .container_spanish_light {
+        background-image: url("../../img/projectres_spanish_light.png");
+        height: auto;
+    }
+    .container_spanish_dark {
+        background-image: url("../../img/projectres_spanish_dark.png");
+        height: auto;
+    }
+    .container_english_light {
+        background-image: url("../../img/projectres_english_light.png");
+        height: auto;
+    }
+    .container_english_dark {
+        background-image: url("../../img/projectres_english_dark.png");
+        height: auto;
+    }
+    .grid {
+        margin-top: 10%;
+        grid-template-columns: 1fr;
+        align-self: center;
+        margin-left: 0;
+    }
+    .btn_light, .btn_dark{
+        width: 15%;
+        margin-top: 15vh;
+    }
+}
+

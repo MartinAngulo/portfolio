@@ -111,7 +111,6 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
     gap: 10px;
     width: 25vw;
     height: 64vh;
@@ -123,5 +122,30 @@
     .info {
         width: 35vw;
     }
-
 }
+
+@media screen and (max-width: 400px) {
+    .overlay {
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 20%;
+        width: 90%;
+        height: 35%;
+    }
+    .group_btns{
+        bottom: 5px;
+    }
+    .close {
+        right: 20px;
+    }
+    .info {
+        font-size: 0.7rem;
+        width: 70%;
+        padding: 5% 10% 3% 10%;
+        height: 60%;
+        justify-content: flex-start;
+        margin-bottom: 5%;
+    }
+}
+

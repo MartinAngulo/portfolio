@@ -100,3 +100,9 @@
     transform: scale(1.5);
     opacity: 1;
 }
+
+@media screen and (max-width: 400px){
+    .figure {
+        height: 9vh;
+    }
+}

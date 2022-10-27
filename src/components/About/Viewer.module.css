@@ -60,3 +60,10 @@ height: 60vh;
 .right_btn:hover {
     opacity: 1;
 }
+
+@media screen and (max-width: 400px){
+    .img {
+        width: 80%;
+        height: auto;
+    }
+}

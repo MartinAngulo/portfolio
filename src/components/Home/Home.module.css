@@ -21,6 +21,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    top: 0;
+    left: 0;
     background-color: #E5E5E5;
 }
 .container_english_dark {
@@ -46,6 +48,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    top: 0;
+    left: 0;
     background-color: #E5E5E5;
 }
 
@@ -88,4 +92,31 @@
     font-family: 'Roboto Condensed';
     padding-bottom: 10vh;
     padding-left: 3vw;
+}
+
+@media screen and (max-width: 400px){
+    .container_spanish_light {
+        background-image: url("../../img/homeres_spanish_light.png");
+    }
+    .container_spanish_dark {
+        background-image: url("../../img/homeres_spanish_dark.png");
+    }
+    .container_english_light {
+        background-image: url("../../img/homeres_english_light.png");
+    }
+    .container_english_dark {
+        background-image: url("../../img/homeres_english_dark.png");
+    }
+    .name_light {
+        font-size: 5rem;
+    }
+    .name_dark {
+        font-size: 5rem;
+    }
+    .tittle_light {
+        font-size: 1.5rem;
+    }
+    .tittle_dark {
+        font-size: 1.5rem;
+    }
 }

@@ -36,7 +36,7 @@ export default function Contact() {
             alt='email logo'
             loading='lazy'
             style={{width:"3vw"}} title='email' src={email}></img>
-            <a href='mailto: martinangulo1194@gmail.com' rel="noreferrer noopener">martinangulo1194@gmail.com</a>
+            <a href='mailto: martinangulo1194@gmail.com' rel="noreferrer noopener">martinangulo1194</a>
           </div>
         </div >
         <div className={styles.social}>
@@ -46,14 +46,14 @@ export default function Contact() {
             alt='LinkedIn logo'
             loading='lazy'
              style={{width:"3vw"}} title='LinkedIn' src={link}></img>
-            <a href='https://www.linkedin.com/in/martinangulo1194/' rel="noreferrer noopener" target="_blank">https://www.linkedin.com/in/martinangulo1194/</a>
+            <a href='https://www.linkedin.com/in/martinangulo1194/' rel="noreferrer noopener" target="_blank">/martinangulo1194/</a>
           </div>
           <div className={styles.links}>
             <img 
             alt='Github logo'
             loading='lazy'
             style={{width:"3vw"}} title='Github' src={git}></img>
-            <a href='https://github.com/MartinAngulo' rel="noreferrer noopener" target="_blank">https://github.com/MartinAngulo</a>
+            <a  href='https://github.com/MartinAngulo' rel="noreferrer noopener" target="_blank">/MartinAngulo</a>
           </div>
         </div>
       </div>

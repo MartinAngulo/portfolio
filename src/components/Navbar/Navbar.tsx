@@ -15,6 +15,11 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
   const settings = useContext(SettingsContext);
   const isLight = settings[0] === 'light';
   const navigate = useNavigate();
+  const [isActive, setActive] = useState<boolean>(false);
+
+  const handleActive = () => {
+    setActive(!isActive);
+  }
 
   const onClick = () => {
     props.switchTheme();
@@ -37,7 +42,7 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
       <div>
         <a className={isLight ? styles.CV_light : styles.CV_dark} href={(texts as any)[language].cv[1]} target="_blank" rel='noopener norreferer'>{(texts as any)[language].cv[0]}</a>
       </div>
-      <div style={{display:"flex", justifyContent:"space-between", width:"35vw"}}>
+      <div className={styles.responsive}>
         <div className={isLight ? styles.options_light : styles.options_dark}>
           <p className={styles.btns} onClick={goHome}>{(texts as any)[language].navbar[0]}</p>
           <Scroll
@@ -67,6 +72,40 @@ export default function Navbar(props: { switchTheme: { (): void }, switchLanguag
           </select>
         </div>
       </div>
+      <div
+        className={isLight ? styles.burguer_light : styles.burguer_dark}
+        onClick={handleActive}
+      >
+        <a> </a>
+      </div>
+      {
+        isActive &&
+        <div className={isLight ? styles.additional_light : styles.additional_dark}>
+          <p className={styles.btns} onClick={goHome}>{(texts as any)[language].navbar[0]}</p>
+          <Scroll
+            className={styles.btns}
+            to="About"
+            smooth={true}
+          >{(texts as any)[language].navbar[1]}</Scroll>
+          <Scroll
+            className={styles.btns}
+            to="Tech"
+            smooth={true}
+          >{(texts as any)[language].navbar[2]}</Scroll>
+          <Scroll
+            className={styles.btns}
+            to="Contact"
+            smooth={true}
+          >{(texts as any)[language].navbar[3]}</Scroll>
+          {isLight ?
+            <button onClick={onClick} className={styles.switchSpan}><FontAwesomeIcon icon={faSun} /></button>
+            :
+            <button onClick={onClick} className={styles.switchSpan}><FontAwesomeIcon icon={faMoon} /></button>}
+          <select className={styles.select} value={language} onChange={onChange}>
+            <option value='spanish'>Español</option>
+            <option value='english'>English</option>
+          </select>
+        </div>}
     </div>
   )
 }

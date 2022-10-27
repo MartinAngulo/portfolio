@@ -94,3 +94,36 @@
     gap: 20px;
     padding-top: 10px;
 }
+
+@media screen and (max-width: 400px){
+    .container_spanish_light {
+        background-image: url("../../img/contactres_spanish_light.png");
+    }
+    .container_spanish_dark {
+        background-image: url("../../img/contactres_spanish_dark.png");
+    }
+    .container_english_light {
+        background-image: url("../../img/contactres_english_light.png");
+    }
+    .container_english_dark {
+        background-image: url("../../img/contactres_english_dark.png");
+    }
+    .tittle_light, .tittle_dark {
+        margin-top: 10%;
+        font-size: 2rem;
+        width: 80%;
+    }
+    .contact_light, .contact_dark{
+        width: 90%;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+    .contact_dark::before {
+        width: 90%;
+    }
+    .social {
+        width: 45%;
+        align-items: center;
+    }
+}
+

@@ -19,6 +19,7 @@
     align-items: center;
     background-color: #120907;
 }
+
 .container_english_light {
     background-image: url("../../img/tech_english_light.png");
     background-size: contain;
@@ -46,70 +47,87 @@
     width: 32vw;
     height: 95vh;
     margin-top: 5vh;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .tech_wheel_dark {
     width: 32vw;
     height: 95vh;
     margin-top: 5vh;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .wheel_html {
     transition: all 1s ease-in-out;
 }
+
 .wheel_react {
     transition: all 1s ease-in-out;
     transform: rotate(-25.7deg);
 }
+
 .wheel_js {
     transition: all 1s ease-in-out;
     transform: rotate(-51.4deg);
 }
+
 .wheel_mongo {
     transition: all 1s ease-in-out;
     transform: rotate(-77.1deg);
 }
+
 .wheel_ts {
     transition: all 1s ease-in-out;
     transform: rotate(-102.8deg);
 }
+
 .wheel_css {
     transition: all 1s ease-in-out;
     transform: rotate(-128.5deg);
 }
+
 .wheel_node {
     transition: all 1s ease-in-out;
     transform: rotate(-154.2deg);
 }
+
 .wheel_sequelize {
     transition: all 1s ease-in-out;
     transform: rotate(-180deg);
 }
+
 .wheel_mongoose {
     transition: all 1s ease-in-out;
     transform: rotate(-205.7deg);
 }
+
 .wheel_corel {
     transition: all 1s ease-in-out;
     transform: rotate(-231.4deg);
 }
+
 .wheel_tailwind {
     transition: all 1s ease-in-out;
     transform: rotate(-257.1deg);
 }
+
 .wheel_redux {
     transition: all 1s ease-in-out;
     transform: rotate(-282.8deg);
-}.wheel_postgres {
+}
+
+.wheel_postgres {
     transition: all 1s ease-in-out;
     transform: rotate(-308.5deg);
-}.wheel_git {
+}
+
+.wheel_git {
     transition: all 1s ease-in-out;
     transform: rotate(-334.2deg);
 }
@@ -172,30 +190,63 @@
     color: #120907;
 }
 
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1370px) {
+
     .tech_wheel_light {
         width: 40vw;
     }
+
     .tech_wheel_dark {
         width: 40vw;
     }
-    
+
     .tech {
         align-items: flex-start;
         width: 45vw;
         margin-left: 3vw;
     }
+
     .tittle_light {
         font-size: 3.5rem;
     }
+
     .tittle_dark {
         font-size: 3.5rem;
     }
+
     .btn_dark {
         width: 150px;
     }
+
     .btn_light {
         width: 150px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .container_spanish_light {
+        background-image: url("../../img/techres_spanish_light.png");
+    }
+    .container_spanish_dark {
+        background-image: url("../../img/techres_spanish_dark.png");
+    }
+    .container_english_light {
+        background-image: url("../../img/techres_english_light.png");
+    }
+    .container_english_dark {
+        background-image: url("../../img/techres_english_dark.png");
+    }
+    .tittle_light, .tittle_dark {
+        display: none;
+    }
+    .tech_wheel_light, .tech_wheel_dark{
+        display: none;
+    }
+    .tech {
+        margin-top: 25%;
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
